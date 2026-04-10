@@ -27,7 +27,7 @@ Mosquitto Broker (Raspberry Pi)
         ↓
 Home Assistant
         ↓
-Notificação persistente no celular do cuidador
+Notificação no celular do cuidador
 ```
 
 ---
@@ -37,7 +37,7 @@ Notificação persistente no celular do cuidador
 - **Detecção automática de quedas** — algoritmo de 3 fases: queda livre → impacto → repouso
 - **Alarme sonoro local** — buzzer com padrões distintos: 3 bipes (confiança média), 5 bipes (alta confiança), 10 bipes (emergência)
 - **Botão de emergência manual** — o próprio idoso pode acionar
-- **Notificação persistente no celular** — via app Home Assistant, não some até confirmar
+- **Notificação no celular** — via app Home Assistant
 - **Auto-recuperação do sensor** — reinicialização automática se o MPU6050 entrar em modo sleep
 - **Dois níveis de confiança** — `alta_confianca` (queda livre + impacto + repouso + rotação) e `media_confianca` (queda livre + impacto + repouso)
 
@@ -45,16 +45,16 @@ Notificação persistente no celular do cuidador
 
 ## 🧰 Hardware necessário
 
-| Componente | Quantidade | Observação |
+| Componente | Quantidade |
 |---|---|---|
-| ESP32-WROOM-32 (+ expansion board) | 1 | Qualquer DevKit ESP32 |
-| Sensor MPU6050 (módulo GY-521) | 1 | Acelerômetro + giroscópio |
-| Buzzer ativo 5V | 1 | Com oscilador interno |
-| Push button | 1 | 4 pinos |
-| Raspberry Pi 3B+ | 1 | Servidor Home Assistant |
-| Cartão SD 32GB | 1 | Para o Home Assistant OS |
-| Jumpers fêmea-fêmea | ~8 | Para conexão sem solda |
-| Power bank ou bateria LiPo | 1 | Alimentação portátil |
+| ESP32-WROOM-32 (+ expansion board) | 1 |
+| Sensor MPU6050 (módulo GY-521) | 1 |
+| Buzzer ativo 5V | 1 |
+| Push button | 1 |
+| Raspberry Pi 3B+ | 1 |
+| Cartão SD 32GB | 1 |
+| Jumpers fêmea-fêmea | ~8 |
+| Power bank ou bateria LiPo | 1 | 
 
 ---
 
@@ -200,13 +200,7 @@ pulseira-inteligente-esp32/
 
 ## 👥 Equipe
 
-| Nome | Papel |
-|---|---|
-| [Nome 1] | Firmware e algoritmo |
-| [Nome 2] | Hardware e eletrônica |
-| [Nome 3] | Servidor e automações |
-
-**Orientador:** Prof. Alessandro / Profa. — UFSC Araranguá
+Leticia Veran e Valentina Ragnini
 
 ---
 
