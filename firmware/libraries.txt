@@ -1,0 +1,17 @@
+# Bibliotecas necessárias — pulseira-inteligente-esp32
+# Instale via Arduino IDE: Sketch → Incluir Biblioteca → Gerenciar Bibliotecas
+
+# ── Nativas do ESP32 (já incluídas ao instalar o pacote Espressif) ──
+Wire.h       # comunicação I2C com o MPU6050
+WiFi.h       # conexão WiFi
+
+# ── Instalar manualmente ─────────────────────────────────────────────
+PubSubClient # cliente MQTT — autor: Nick O'Leary
+             # pesquisar "PubSubClient" no Gerenciador de Bibliotecas
+             # versão recomendada: 2.8 ou superior
+
+# ── Pacote do ESP32 (Gerenciador de Placas) ──────────────────────────
+# URL: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+# Pacote: esp32 by Espressif Systems
+# Versão testada: 2.x
+# Placa selecionada: ESP32 Dev Module

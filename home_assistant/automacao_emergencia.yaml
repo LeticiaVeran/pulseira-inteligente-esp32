@@ -1,0 +1,21 @@
+alias: "Pulseira — Botão de Emergência"
+description: >
+  Envia notificação persistente ao celular do cuidador quando o idoso
+  pressiona o botão de emergência manual na pulseira.
+
+trigger:
+  - platform: mqtt
+    topic: pulseira/emergencia
+    payload: botao_manual
+
+action:
+  - action: notify.mobile_app_SEU_CELULAR
+    data:
+      title: "🆘 EMERGÊNCIA MANUAL"
+      message: "O idoso pressionou o botão de emergência! Atenda imediatamente."
+      data:
+        persistent: true
+        tag: emergencia_botao
+        importance: high
+
+mode: single

@@ -1,0 +1,25 @@
+# ── Credenciais — NUNCA enviar ao GitHub ──────────────────────
+firmware/config.h
+
+# ── Arduino IDE ───────────────────────────────────────────────
+*.elf
+*.bin
+*.map
+*.hex
+build/
+.arduino15/
+
+# ── Sistema operacional ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editores ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Temporários ───────────────────────────────────────────────
+*.tmp
+*.log

@@ -1,0 +1,30 @@
+// ══════════════════════════════════════════════════════════════
+// config.h.example — modelo de configuração da pulseira
+// ──────────────────────────────────────────────────────────────
+// 1. Copie este arquivo: cp config.h.example config.h
+// 2. Preencha com suas credenciais reais
+// 3. config.h está no .gitignore — suas senhas ficam seguras
+// ══════════════════════════════════════════════════════════════
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// ── Rede WiFi ─────────────────────────────────────────────────
+// Nome e senha da rede WiFi onde o ESP32 vai se conectar
+// Para apresentação na UFSC: use o hotspot do celular
+#define WIFI_SSID     "NOME_DA_SUA_REDE"
+#define WIFI_SENHA    "SENHA_DA_SUA_REDE"
+
+// ── Broker MQTT ───────────────────────────────────────────────
+// IP do Raspberry Pi na mesma rede WiFi
+// Para descobrir o IP: ping homeassistant.local
+// ou verifique no roteador/hotspot
+#define MQTT_SERVIDOR "192.168.X.X"
+#define MQTT_PORTA    1883
+
+// ── Credenciais MQTT ──────────────────────────────────────────
+// Criadas em: Home Assistant → Configurações → Pessoas
+#define MQTT_USUARIO  "SEU_USUARIO_MQTT"
+#define MQTT_SENHA    "SUA_SENHA_MQTT"
+
+#endif

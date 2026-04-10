@@ -1,0 +1,38 @@
+alias: "Pulseira — Alerta de Queda"
+description: >
+  Envia notificação persistente ao celular do cuidador quando o ESP32
+  detecta uma queda e publica no tópico MQTT pulseira/queda.
+
+trigger:
+  - platform: mqtt
+    topic: pulseira/queda
+
+action:
+  - choose:
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.payload == 'alta_confianca' }}"
+        sequence:
+          - action: notify.mobile_app_SEU_CELULAR
+            data:
+              title: "⚠️ QUEDA DETECTADA"
+              message: "Queda confirmada com alta confiança! Verifique o idoso imediatamente."
+              data:
+                persistent: true
+                tag: queda_pulseira
+                importance: high
+
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.payload == 'media_confianca' }}"
+        sequence:
+          - action: notify.mobile_app_SEU_CELULAR
+            data:
+              title: "⚠️ POSSÍVEL QUEDA"
+              message: "Queda detectada com confiança média. Verifique o idoso."
+              data:
+                persistent: true
+                tag: queda_pulseira
+                importance: high
+
+mode: single
