@@ -12,7 +12,7 @@
 
 ## 📌 Sobre o projeto
 
-Projeto desenvolvido na disciplina **Projeto de Sistemas Ubíquos e Embarcados — 2026.1** da UFSC Araranguá.
+Projeto desenvolvido na disciplina **Projeto Integrador — 2026.1** da UFSC Araranguá.
 
 O sistema detecta automaticamente quedas de idosos através de um sensor inercial (MPU6050) acoplado ao pulso. Quando uma queda é confirmada, um alarme sonoro (buzzer) dispara imediatamente na pulseira e uma notificação persistente é enviada ao celular do cuidador via Home Assistant. O idoso também pode acionar um botão de emergência manual.
 
