@@ -2,7 +2,7 @@
 // pulseira_principal.ino
 // Pulseira Inteligente para Monitoramento e Segurança de Idosos
 // ──────────────────────────────────────────────────────────────
-// Disciplina: Projeto de Sistemas Ubíquos e Embarcados — 2026.1
+// Disciplina: Projeto Integrador — 2026.1
 // UFSC Araranguá
 // ──────────────────────────────────────────────────────────────
 // Hardware:
