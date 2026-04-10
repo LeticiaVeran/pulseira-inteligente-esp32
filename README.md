@@ -46,7 +46,7 @@ Notificação no celular do cuidador
 ## 🧰 Hardware necessário
 
 | Componente | Quantidade |
-|---|---|---|
+|---|---|
 | ESP32-WROOM-32 (+ expansion board) | 1 |
 | Sensor MPU6050 (módulo GY-521) | 1 |
 | Buzzer ativo 5V | 1 |
@@ -54,7 +54,7 @@ Notificação no celular do cuidador
 | Raspberry Pi 3B+ | 1 |
 | Cartão SD 32GB | 1 |
 | Jumpers fêmea-fêmea | ~8 |
-| Power bank ou bateria LiPo | 1 | 
+| Power bank ou bateria LiPo | 1 |
 
 ---
 
